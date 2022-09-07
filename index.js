@@ -1,5 +1,6 @@
 const app = require('express')();
 const { fork  } = require('child_process');
+const service = require('./service/isPrime');
 
 app.get('/test', (_, res) => res.send('Test Passed'));
 
@@ -10,7 +11,8 @@ app.get('/double/:number', (req, res) => {
 });
 
 app.get('/isprime/:number', (req, res) => {
-
+    const result = service.isPrime(req.params.number);
+    res.send(result);
 });
 
 app.listen(3000, () => console.log("Server up and running"));
