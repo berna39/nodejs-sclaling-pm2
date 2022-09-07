@@ -1,4 +1,4 @@
-## Nodejs With PM@
+## Scaling Nodejs app with PM2
 
 In this Application i scaled my app across all CPUs available, without any code modifications. This greatly increases the performance and reliability of your applications, depending on the number of CPUs available. Under the hood, this uses the Node.js cluster module such that the scaled application’s child processes can automatically share server ports.
 
