@@ -5,7 +5,7 @@ exports.isPrime = (number) => {
     isPrime = true;
 
     for(let i = 3; i < number; i++){
-
+        console.log(i); // expensive :(
         if(number % i === 0){
             endTime = new Date();
             isPrime = false;
