@@ -1,5 +1,4 @@
 const app = require('express')();
-const { fork  } = require('child_process');
 const service = require('./service/isPrime');
 
 app.get('/test', (_, res) => res.send('Test Passed'));

@@ -20,5 +20,4 @@ exports.isPrime = (number) => {
         "time": endTime.getTime() - startTime.getTime(),
         "isPrime": isPrime
     };
-
 }
